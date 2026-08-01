@@ -1,0 +1,1352 @@
+[
+  {
+    "transaction_id": 573,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-15",
+    "amount": "-11.61",
+    "raw_description": "MCDONALD'S F1234",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 585,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-21",
+    "amount": "-49.92",
+    "raw_description": "CASH APP*TRANSFER",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1439,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-18",
+    "amount": "-31.22",
+    "raw_description": "TST* TAQUERIA",
+    "true_category": "Dining",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2354,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-13",
+    "amount": "-21.52",
+    "raw_description": "SHAKE SHACK #221",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 11,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-08-30",
+    "amount": "-38.00",
+    "raw_description": "VENMO PAYMENT",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 30,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-08-25",
+    "amount": "-71.90",
+    "raw_description": "VENMO PAYMENT",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 108,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-08-23",
+    "amount": "-8.84",
+    "raw_description": "SHAKE SHACK #221",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 651,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-24",
+    "amount": "-26.12",
+    "raw_description": "ARCO 42881",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1594,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-01",
+    "amount": "-17.53",
+    "raw_description": "PANERA BREAD #601",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 118,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-08-29",
+    "amount": "-45.92",
+    "raw_description": "HOME DEPOT #1092",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2345,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-14",
+    "amount": "-17.81",
+    "raw_description": "STARBUCKS STORE #556",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1112,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-01-11",
+    "amount": "-21.33",
+    "raw_description": "CHIPOTLE ONLINE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1054,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-01-31",
+    "amount": "-15.18",
+    "raw_description": "TST*RAMEN BAR",
+    "true_category": "Dining",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1519,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-24",
+    "amount": "-29.44",
+    "raw_description": "CASH APP*TRANSFER",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 212,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-09-23",
+    "amount": "-15.64",
+    "raw_description": "PAYPAL *INST XFER",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 397,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-13",
+    "amount": "-14.95",
+    "raw_description": "PP*GOOGLE STORAGE",
+    "true_category": "Subscriptions",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 741,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-06",
+    "amount": "-58.15",
+    "raw_description": "ETSY.COM - ORDER",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 355,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-09-10",
+    "amount": "-39.50",
+    "raw_description": "ALDI 42019",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 803,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-16",
+    "amount": "-24.62",
+    "raw_description": "WM SUPERCENTER #4521",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1933,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-05-08",
+    "amount": "-8.72",
+    "raw_description": "ARCO 42881",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 452,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-25",
+    "amount": "-159.77",
+    "raw_description": "UNITED AIRLINES 0162",
+    "true_category": "Travel",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1025,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-04",
+    "amount": "-72.37",
+    "raw_description": "IKEA CCA #1234",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1655,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-13",
+    "amount": "-19.78",
+    "raw_description": "NORDSTROM #0410",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1673,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-27",
+    "amount": "-10.97",
+    "raw_description": "ARCO 42881",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 277,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-09-29",
+    "amount": "-17.14",
+    "raw_description": "STARBUCKS STORE #556",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 655,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-07",
+    "amount": "-16.40",
+    "raw_description": "PANERA BREAD #601",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1756,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-03",
+    "amount": "-18.62",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2276,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-18",
+    "amount": "-35.26",
+    "raw_description": "UBER TRIP HELP.UBER.COM",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1891,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-05-23",
+    "amount": "-15.97",
+    "raw_description": "AMAZON.COM*A1B2C3D4",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2231,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-17",
+    "amount": "-52.28",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2089,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-23",
+    "amount": "-23.75",
+    "raw_description": "CLIPPER CARD RELOAD",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1250,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-02-21",
+    "amount": "-26.13",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 243,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-09-17",
+    "amount": "-10.66",
+    "raw_description": "CHIPOTLE ONLINE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2350,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-15",
+    "amount": "-40.76",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1092,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-01-22",
+    "amount": "-23.14",
+    "raw_description": "SFMTA PARKING METER",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2129,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-11",
+    "amount": "-131.76",
+    "raw_description": "MARRIOTT HOTELS 4471",
+    "true_category": "Travel",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 237,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-09-21",
+    "amount": "-66.09",
+    "raw_description": "MASSAGE ENVY 0210",
+    "true_category": "Personal Care",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 873,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-10",
+    "amount": "-14.13",
+    "raw_description": "CASH APP*TRANSFER",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1842,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-05-28",
+    "amount": "-5.45",
+    "raw_description": "GRUBHUB*NOODLE HSE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 455,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-02",
+    "amount": "-28.60",
+    "raw_description": "WALGREENS #4471",
+    "true_category": "Healthcare",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 738,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-15",
+    "amount": "-5.89",
+    "raw_description": "DOORDASH*THAI PLACE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 634,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-30",
+    "amount": "-7.02",
+    "raw_description": "SQ *BIKE REPAIR",
+    "true_category": "Transport",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2327,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-28",
+    "amount": "-13.10",
+    "raw_description": "BEST BUY #00234",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1230,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-02-13",
+    "amount": "-18.25",
+    "raw_description": "CHIPOTLE ONLINE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 674,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-27",
+    "amount": "-69.52",
+    "raw_description": "SQ *PILATES CO",
+    "true_category": "Personal Care",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1156,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-01-09",
+    "amount": "-8.18",
+    "raw_description": "SPROUTS FARMERS MKT",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 949,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-20",
+    "amount": "-55.98",
+    "raw_description": "VENMO PAYMENT",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1753,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-20",
+    "amount": "-8.46",
+    "raw_description": "SAFEWAY STORE 0451",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 456,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-28",
+    "amount": "-52.62",
+    "raw_description": "DELTA DENTAL PREM",
+    "true_category": "Healthcare",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 489,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-14",
+    "amount": "-19.27",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 124,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-08-20",
+    "amount": "-17.25",
+    "raw_description": "PEET'S COFFEE 0912",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1968,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-05-20",
+    "amount": "-34.40",
+    "raw_description": "PRESIDIO BOWL SF",
+    "true_category": "Entertainment",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1148,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-01-31",
+    "amount": "-30.32",
+    "raw_description": "WARBY PARKER 0091",
+    "true_category": "Healthcare",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 633,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-05",
+    "amount": "-33.20",
+    "raw_description": "PAYPAL *AIRBNB",
+    "true_category": "Travel",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2419,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-04",
+    "amount": "-23.30",
+    "raw_description": "ALDI 42019",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1164,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-01-29",
+    "amount": "-11.62",
+    "raw_description": "SWEETGREEN 445",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2495,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-08-03",
+    "amount": "-67.31",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1730,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-19",
+    "amount": "-20.04",
+    "raw_description": "PRESIDIO BOWL SF",
+    "true_category": "Entertainment",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1525,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-28",
+    "amount": "-7.75",
+    "raw_description": "PEET'S COFFEE 0912",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1019,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-22",
+    "amount": "-28.97",
+    "raw_description": "TRADER JOE'S #142",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1765,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-25",
+    "amount": "-10.58",
+    "raw_description": "H MART #221",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 663,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-27",
+    "amount": "-70.82",
+    "raw_description": "TARGET T-1122",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 61,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-08-11",
+    "amount": "-24.09",
+    "raw_description": "H MART #221",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2106,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-25",
+    "amount": "-13.19",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1608,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-02",
+    "amount": "-49.99",
+    "raw_description": "24 HOUR FITNESS",
+    "true_category": "Healthcare",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1656,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-22",
+    "amount": "-69.18",
+    "raw_description": "CASH APP*TRANSFER",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1312,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-02-03",
+    "amount": "-21.42",
+    "raw_description": "BLUE BOTTLE 0032",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2026,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-09",
+    "amount": "-40.44",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1998,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-05-28",
+    "amount": "-48.77",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2494,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-08-17",
+    "amount": "-17.60",
+    "raw_description": "PEET'S COFFEE 0912",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1827,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-05-08",
+    "amount": "-23.89",
+    "raw_description": "SQ *BARBERSHOP",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2590,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-08-26",
+    "amount": "-9.21",
+    "raw_description": "BLUE BOTTLE 0032",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1211,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-02-22",
+    "amount": "-15.70",
+    "raw_description": "PAYPAL *MISCSVC",
+    "true_category": "Shopping",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 445,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-13",
+    "amount": "-75.39",
+    "raw_description": "VENMO PAYMENT",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 883,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-09",
+    "amount": "-21.14",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2389,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-30",
+    "amount": "-6.43",
+    "raw_description": "MCDONALD'S F1234",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1398,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-02-11",
+    "amount": "-26.71",
+    "raw_description": "SPROUTS FARMERS MKT",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1245,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-02-01",
+    "amount": "-15.68",
+    "raw_description": "SHELL OIL 57443210",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 461,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-03",
+    "amount": "-18.00",
+    "raw_description": "SHELL OIL 57443210",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 645,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-30",
+    "amount": "-38.79",
+    "raw_description": "WM SUPERCENTER #4521",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 364,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-09-13",
+    "amount": "-13.50",
+    "raw_description": "COSTCO WHSE #0455",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2492,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-08-30",
+    "amount": "-91.14",
+    "raw_description": "ZELLE TRANSFER TO J DOE",
+    "true_category": "Transfer",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 376,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-09-11",
+    "amount": "-30.34",
+    "raw_description": "SQ *PILATES CO",
+    "true_category": "Personal Care",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2019,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-20",
+    "amount": "-9.28",
+    "raw_description": "SQ *JOES COFFEE",
+    "true_category": "Dining",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2051,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-28",
+    "amount": "-12.68",
+    "raw_description": "TICKETMASTER EVENT",
+    "true_category": "Entertainment",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 721,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-10",
+    "amount": "-63.23",
+    "raw_description": "CVS PHARMACY #6621",
+    "true_category": "Healthcare",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1625,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-06",
+    "amount": "-25.30",
+    "raw_description": "COSTCO WHSE #0455",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2199,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-11",
+    "amount": "-36.82",
+    "raw_description": "SQ *THE CORNER MKT",
+    "true_category": "Groceries",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 211,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-09-15",
+    "amount": "-9.35",
+    "raw_description": "APLPAY MISC RETAIL",
+    "true_category": "Shopping",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1611,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-22",
+    "amount": "-39.75",
+    "raw_description": "AMZN MKTP US*A1B2C3",
+    "true_category": "Shopping",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1151,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-01-08",
+    "amount": "-86.74",
+    "raw_description": "CASH APP*TRANSFER",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2383,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-12",
+    "amount": "-14.31",
+    "raw_description": "CHIPOTLE ONLINE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1492,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-22",
+    "amount": "-9.39",
+    "raw_description": "GROCERY OUTLET 118",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1596,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-04",
+    "amount": "-52.91",
+    "raw_description": "SEPHORA #0455",
+    "true_category": "Personal Care",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2217,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-08",
+    "amount": "-46.76",
+    "raw_description": "ONE MEDICAL MEMBER",
+    "true_category": "Healthcare",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 673,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-08",
+    "amount": "-18.60",
+    "raw_description": "APPLE.COM/BILL",
+    "true_category": "Subscriptions",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 718,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-30",
+    "amount": "-95.76",
+    "raw_description": "LOWE'S #2214",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 299,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-09-05",
+    "amount": "-18.41",
+    "raw_description": "SWEETGREEN 445",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1053,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-01-27",
+    "amount": "-6.60",
+    "raw_description": "SQ *CORNER BAKERY",
+    "true_category": "Dining",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1746,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-18",
+    "amount": "-36.70",
+    "raw_description": "NORDSTROM #0410",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2002,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-05-27",
+    "amount": "-16.20",
+    "raw_description": "PEET'S COFFEE 0912",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1821,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-05-10",
+    "amount": "-81.10",
+    "raw_description": "COMCAST XFINITY",
+    "true_category": "Utilities",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 679,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-04",
+    "amount": "-36.83",
+    "raw_description": "VENMO PAYMENT",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2115,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-14",
+    "amount": "-18.94",
+    "raw_description": "GROCERY OUTLET 118",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 53,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-08-18",
+    "amount": "-65.73",
+    "raw_description": "SQ *YOGA STUDIO",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 488,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-23",
+    "amount": "-19.09",
+    "raw_description": "NINTENDO CO0221",
+    "true_category": "Entertainment",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 980,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-18",
+    "amount": "-27.32",
+    "raw_description": "MASSAGE ENVY 0210",
+    "true_category": "Personal Care",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-08-01",
+    "amount": "-1806.15",
+    "raw_description": "ACH DEBIT WESTVIEW APARTMENTS",
+    "true_category": "Housing",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 406,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-26",
+    "amount": "-18.40",
+    "raw_description": "SHAKE SHACK #221",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1440,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-14",
+    "amount": "-31.11",
+    "raw_description": "SQ *FARMERS MARKET",
+    "true_category": "Groceries",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1748,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-02",
+    "amount": "-5.86",
+    "raw_description": "BLUE BOTTLE 0032",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 313,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-09-05",
+    "amount": "-16.03",
+    "raw_description": "DROPBOX*monthly",
+    "true_category": "Subscriptions",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 874,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-11",
+    "amount": "-37.41",
+    "raw_description": "PAYPAL *UBER",
+    "true_category": "Transport",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 2462,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-08-10",
+    "amount": "-7.75",
+    "raw_description": "UBER TRIP HELP.UBER.COM",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 981,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-21",
+    "amount": "-50.68",
+    "raw_description": "LOWE'S #2214",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2184,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-14",
+    "amount": "-38.33",
+    "raw_description": "SFMTA PARKING METER",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1723,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-03",
+    "amount": "-12.66",
+    "raw_description": "CHIPOTLE ONLINE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2148,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-24",
+    "amount": "-55.25",
+    "raw_description": "WAYFAIR.COM ORDER",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1503,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-01",
+    "amount": "-12.11",
+    "raw_description": "SWEETGREEN 445",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 10,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-08-09",
+    "amount": "-7.32",
+    "raw_description": "TST*PIZZA KITCHEN",
+    "true_category": "Dining",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 917,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-26",
+    "amount": "-43.44",
+    "raw_description": "MASSAGE ENVY 0210",
+    "true_category": "Personal Care",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 557,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-27",
+    "amount": "-21.32",
+    "raw_description": "JIFFY LUBE #1201",
+    "true_category": "Transport",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 512,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-13",
+    "amount": "-26.40",
+    "raw_description": "MASSAGE ENVY 0210",
+    "true_category": "Personal Care",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2273,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-15",
+    "amount": "-14.51",
+    "raw_description": "GROCERY OUTLET 118",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 856,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-25",
+    "amount": "-20.21",
+    "raw_description": "SUBWAY 3391",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 906,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-16",
+    "amount": "-15.05",
+    "raw_description": "UBER EATS*SUSHI GO",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1717,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-21",
+    "amount": "-10.76",
+    "raw_description": "WHOLE FOODS MARKET",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1228,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-02-08",
+    "amount": "-84.66",
+    "raw_description": "VANGUARD BUY INVESTMENT",
+    "true_category": "Transfer",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2285,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-31",
+    "amount": "-24.59",
+    "raw_description": "DOORDASH*THAI PLACE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1450,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-11",
+    "amount": "-37.28",
+    "raw_description": "LOWE'S #2214",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2082,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-10",
+    "amount": "-73.23",
+    "raw_description": "CASH APP*TRANSFER",
+    "true_category": "Transfer",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 1574,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-28",
+    "amount": "-16.50",
+    "raw_description": "SUBWAY 3391",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2444,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-08-17",
+    "amount": "-31.83",
+    "raw_description": "TST*BRUNCH CAFE",
+    "true_category": "Dining",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 921,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-11",
+    "amount": "-30.80",
+    "raw_description": "PRESIDIO BOWL SF",
+    "true_category": "Entertainment",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1760,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-04-26",
+    "amount": "-16.86",
+    "raw_description": "CHIPOTLE ONLINE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 545,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-13",
+    "amount": "-14.19",
+    "raw_description": "SHAKE SHACK #221",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2120,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-05",
+    "amount": "-52.08",
+    "raw_description": "IKEA CCA #1234",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2416,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-08",
+    "amount": "-6.40",
+    "raw_description": "SUBWAY 3391",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2134,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-20",
+    "amount": "-24.70",
+    "raw_description": "TICKETMASTER EVENT",
+    "true_category": "Entertainment",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1370,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-02-17",
+    "amount": "-31.95",
+    "raw_description": "GREAT CLIPS #3021",
+    "true_category": "Personal Care",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 24,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-08-18",
+    "amount": "-25.31",
+    "raw_description": "PRESIDIO BOWL SF",
+    "true_category": "Entertainment",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1560,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-09",
+    "amount": "-51.01",
+    "raw_description": "UNIQLO USA 0221",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 398,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-24",
+    "amount": "-34.80",
+    "raw_description": "SQ *DOG GROOMER",
+    "true_category": "Personal Care",
+    "is_ambiguous": true
+  },
+  {
+    "transaction_id": 837,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-12",
+    "amount": "-24.36",
+    "raw_description": "IKEA CCA #1234",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2108,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-06-25",
+    "amount": "-101.00",
+    "raw_description": "MARRIOTT HOTELS 4471",
+    "true_category": "Travel",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1586,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-03-27",
+    "amount": "-14.58",
+    "raw_description": "GRUBHUB*NOODLE HSE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 606,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-10-31",
+    "amount": "-16.65",
+    "raw_description": "UNIQLO USA 0221",
+    "true_category": "Shopping",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 1014,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-12-16",
+    "amount": "-28.50",
+    "raw_description": "SPROUTS FARMERS MKT",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 2362,
+    "account_id": "acct_demo_001",
+    "posted_date": "2026-07-22",
+    "amount": "-18.83",
+    "raw_description": "WHOLE FOODS MARKET",
+    "true_category": "Groceries",
+    "is_ambiguous": false
+  },
+  {
+    "transaction_id": 778,
+    "account_id": "acct_demo_001",
+    "posted_date": "2025-11-10",
+    "amount": "-24.05",
+    "raw_description": "DOORDASH*THAI PLACE",
+    "true_category": "Dining",
+    "is_ambiguous": false
+  }
+]

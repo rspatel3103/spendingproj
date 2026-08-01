@@ -1,0 +1,31 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local databases
+*.db
+*.sqlite3
+
+# Chroma vector store data
+chroma_data/
+
+# Timestamped backups (*.bak-20260801T122556 etc). These do NOT match
+# the patterns above -- "cashflow.db.bak-<stamp>" does not end in .db,
+# and "chroma_data.bak-<stamp>" is not the chroma_data/ directory.
+*.bak
+*.bak-*
+*.backup
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
