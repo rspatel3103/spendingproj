@@ -3,6 +3,33 @@
 How to run the cashflow-agent API and call every endpoint it exposes,
 with example requests and real response shapes.
 
+See [README.md](README.md) for what the service does and why it's built
+this way; this file is purely the endpoint reference.
+
+## First run
+
+If you have never seeded this checkout, do these two steps before
+starting the server:
+
+```bash
+python -m scripts.generate_synthetic_data --reset   # transactions + vendor KB
+python -m scripts.build_indexes                     # embed the vendor KB
+```
+
+**The server will not start without a populated vendor index.** It exits
+with:
+
+```
+EmptyIndexError: Vendor index at './chroma_data' is empty -- retrieval
+would silently return nothing and every categorization would be
+ungrounded. Rebuild it with: python -m scripts.build_indexes
+```
+
+That is deliberate, not a bug. An empty index doesn't break anything
+visibly — retrieval just returns nothing, the prompt still forms, and the
+model answers ungrounded with high confidence. Refusing to boot is the
+only thing that makes the failure loud.
+
 ## Start the server
 
 ```bash
@@ -14,6 +41,10 @@ uvicorn app.main:app --reload
 Listens on `http://localhost:8000`. All examples below assume that base
 URL. Add `-i` to any `curl` command to see the HTTP status code, or pipe
 through `python3 -m json.tool` to pretty-print the response body.
+
+Freshly seeded transactions are **uncategorized** until you run
+`POST /categorize/run` (below), so `/review-queue` and `/metrics` will be
+empty until then.
 
 ---
 
@@ -92,6 +123,14 @@ curl -X POST localhost:8000/categorize/run
 ```
 
 Same `job_id` pattern as ingest — check status via `GET /jobs/{job_id}`.
+
+**Cost and time.** One GPT-4o call plus two embedding lookups per
+transaction. On the bundled ~2,600-row dataset that is roughly 40 minutes
+and a few dollars. The binding constraint is your OpenAI account's
+tokens-per-minute limit, not the code — at 30,000 TPM the ceiling is
+about 68 transactions/minute regardless of how much concurrency you
+configure. Tune `CATEGORIZATION_CONCURRENCY` if you're on a higher tier;
+see `.env.example`.
 
 ---
 
@@ -279,21 +318,30 @@ curl localhost:8000/metrics
 
 ```json
 {
-  "n_categorization_calls": 2515,
-  "avg_categorization_latency_ms": 812.4,
-  "avg_confidence": 0.87,
-  "pct_auto_applied": 100.0,
-  "pct_queued_for_review": 0.0,
+  "n_categorization_calls": 2597,
+  "avg_categorization_latency_ms": 1725.6,
+  "avg_confidence": 0.871,
+  "pct_auto_applied": 97.4,
+  "pct_queued_for_review": 2.6,
   "n_forecast_calls": 4,
-  "avg_forecast_latency_ms": 6.2
+  "avg_forecast_latency_ms": 16.4
 }
 ```
 
+(Real values from the bundled dataset after a full categorization run.)
+
 All fields are `null`/`0` (not an error) if no calls have happened yet.
-Note: this only counts calls made through the live app (ingest,
-categorize/run, forecast) — `scripts/run_eval.py` and the one-off
-`scripts/backfill_queued_transactions.py` deliberately don't feed this
-table, since it's meant to reflect real production traffic.
+
+Two caveats worth knowing:
+
+- **`scripts/run_eval.py` deliberately does not feed this table.** It's
+  meant to reflect production traffic, and benchmark runs would inflate
+  the call count and skew the averages.
+- **These are lifetime aggregates, with no time window.** That makes them
+  fine as a summary and useless for detecting a regression: a problem
+  that started an hour ago is averaged against every call ever made.
+  Windowing (`created_at > now() - interval`) is the obvious next step —
+  `agent_metrics` already stores the column.
 
 ---
 
