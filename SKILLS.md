@@ -63,6 +63,11 @@ and already-categorized past transactions.
 (`eval_set.json` / `scripts/run_eval.py`), vs. a **70.0%** naive
 baseline (exact substring match against `VendorKB`, no LLM/RAG).
 
+The stronger number is **2,533/2,533 on the full dataset** -- 17x the
+sample, same ground-truth source, and free to compute since no LLM call
+is needed to score already-stored predictions. See the calibration
+section below.
+
 - Run id: `eval_20260801T173312`, completed 2026-08-01 17:37 UTC.
 - Accuracy at `>= AUTO_APPLY_CONFIDENCE_THRESHOLD`: **100% (149/149)**.
   That bucket is the number that matters -- those predictions are written
@@ -94,16 +99,16 @@ review queue instead.
 
 | confidence | rows | outcome |
 |---|---|---|
-| 0.95 | 75 | auto-applied |
-| 0.90 | 1,831 | auto-applied |
-| 0.85 | 271 | auto-applied |
-| 0.80 | 352 | auto-applied |
-| 0.75 and below | 68 | queued for review |
+| 0.95 and above | 85 | auto-applied |
+| 0.90 | 1,818 | auto-applied |
+| 0.85 | 272 | auto-applied |
+| 0.80 | 357 | auto-applied |
+| below 0.80 | 57 | queued for review |
 
-97.4% auto-applied, 2.6% queued. Of the 68 queued, 56 are the
-deliberately-unresolvable descriptors and 10 are `APPLE.COM/BILL` --
-genuine real-world ambiguity, since Apple bills iCloud, App Store, and
-Music through one descriptor, so hedging at 0.70 is correct behaviour
+97.8% auto-applied, 2.2% queued. Almost all of the queue is the
+deliberately-unresolvable descriptors; the remainder is genuine
+real-world ambiguity such as `APPLE.COM/BILL`, which Apple uses for
+iCloud, App Store, and Music alike -- hedging there is correct behaviour
 rather than a failure.
 
 Note that confidence now takes ten distinct values rather than the five
@@ -111,6 +116,75 @@ seen previously. Retrieval quality varies meaningfully across
 transactions now that vendor entries lead with their statement
 descriptor; before, almost everything matched about equally poorly and
 the model had little to discriminate on.
+
+### Is the confidence score calibrated? Measured: no
+
+The apply guardrail rests entirely on a number the model reports about
+itself, so it is worth knowing what that number is actually worth. This
+is measurable for free -- the generator can produce ground truth for
+every resolvable transaction, so all 2,533 of them can be scored without
+a single API call, rather than only the 150-row eval set.
+
+**Accuracy on the full dataset: 2,533/2,533 (100%).**
+
+| claimed confidence | n | observed accuracy | gap |
+|---|---|---|---|
+| 1.00 | 3 | 100% | +0.0% |
+| 0.95 | 82 | 100% | +5.0% |
+| 0.90 | 1,818 | 100% | +10.0% |
+| 0.85 | 272 | 100% | +15.0% |
+| 0.80 | 357 | 100% | +20.0% |
+| 0.70 | 1 | 100% | +30.0% |
+
+Expected Calibration Error: **0.118**, entirely in the *under*-confident
+direction. Every bucket outperforms its own claim. That is the opposite
+of the usual LLM failure mode, and it is not a virtue -- it means the
+number does not mean what it says.
+
+**The guardrail does not discriminate.** Splitting at the 0.80 threshold:
+auto-applied rows are 100% accurate and queued rows are 100% accurate.
+Confidence carries no signal about correctness on this dataset, so the
+threshold currently costs human attention and catches nothing.
+
+That is a statement about the dataset as much as the model: **you cannot
+validate a guardrail on data that contains no mistakes.** Demonstrating
+that the review queue earns its keep requires harder or real-world data,
+and until then the honest claim is that its value is unproven.
+
+**What confidence appears to actually track is retrieval match quality,
+not correctness.** Before the taxonomy fix below, the only two errors in
+the dataset were `24 HOUR FITNESS` categorized as `Personal Care` against
+a ground truth of `Healthcare` -- at 0.90 confidence, auto-applied. The
+model was confident because retrieval *had* found a strong vendor match;
+the disagreement was over taxonomy, which similarity cannot speak to.
+
+**The sharpest finding: identical inputs produced different answers at
+identical confidence.** The same descriptor, same amount, same 0.90
+confidence, resolved to `Healthcare` 11 times and `Personal Care` 2
+times. `temperature=0` reduces sampling variance but does not eliminate
+it, and the model reported the same confidence for the answer it gives
+85% of the time as for the one it gives 15% of the time -- its stated
+confidence does not track its own instability.
+
+That points at a concrete improvement with evidence behind it:
+**self-consistency across N samples would be a better confidence signal
+than asking the model to introspect.** Repeated sampling surfaced real
+uncertainty that self-reporting never did. Combining it with a similarity
+floor and a retrieval-health check (`n_vendor_hits < k` means the index
+is degraded) would give a guardrail grounded in observable signals rather
+than one.
+
+Root cause of those two errors was a taxonomy inconsistency of my own
+making: a gym was `health -> Healthcare` while yoga and pilates were
+`personal_care -> Personal Care`. The model flip-flopped because the
+boundary genuinely did not exist. Moving the gym alongside yoga took the
+error count to zero -- the third instance in this project of a
+"model error" that was actually a gap in the category list, after
+`Travel` and `Personal Care` themselves.
+
+Reproduce: score `decision_log`'s latest categorizer row per transaction
+against `true_category_for_description()`, bucketed by
+`confidence_score`.
 
 ### Retrieval quality is a function of how the KB is written
 

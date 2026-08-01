@@ -332,7 +332,7 @@ VENDOR_KB_SEED = [
     ("Comcast Xfinity", "utilities", "internet", "'COMCAST XFINITY' - home internet and cable, billed monthly.", "seed"),
     ("Pacific Gas and Electric", "utilities", "electricity", "'PACIFIC GAS AND ELECTRIC' - regional electric utility, higher in summer.", "seed"),
     ("Verizon Wireless", "utilities", "phone", "'VERIZON WIRELESS' - mobile phone carrier, billed monthly.", "seed"),
-    ("24 Hour Fitness", "health", "gym", "'24 HOUR FITNESS' - monthly gym membership.", "seed"),
+    ("24 Hour Fitness", "personal_care", "gym", "'24 HOUR FITNESS' - monthly gym membership. Fitness/wellness, categorised with yoga and pilates rather than with medical care.", "seed"),
     ("Acme Corp Payroll", "income", "payroll", "'DIRECT DEP PAYROLL ACME CORP' - salary direct deposit, twice monthly on the 1st and 15th.", "seed"),
     ("State Farm Insurance", "housing", "insurance", "'STATE FARM INSURANCE' - renters insurance premium, billed monthly.", "seed"),
     ("Recology", "utilities", "waste", "'RECOLOGY SF' - municipal waste and recycling service.", "seed"),
@@ -457,7 +457,6 @@ CATEGORY_NAME_MAP = {
     "shopping": "Shopping",
     "entertainment": "Entertainment",
     "healthcare": "Healthcare",
-    "health": "Healthcare",
     "subscriptions": "Subscriptions",
     "income": "Income",
     "transfers": "Transfer",
@@ -477,7 +476,7 @@ RECURRING_TRUE_CATEGORIES = {
     "COMCAST XFINITY": "Utilities",
     "PACIFIC GAS AND ELECTRIC": "Utilities",
     "VERIZON WIRELESS": "Utilities",
-    "24 HOUR FITNESS": "Healthcare",
+    "24 HOUR FITNESS": "Personal Care",
     PAYROLL_DESCRIPTION: "Income",
 }
 
