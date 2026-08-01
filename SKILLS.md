@@ -117,6 +117,50 @@ transactions now that vendor entries lead with their statement
 descriptor; before, almost everything matched about equally poorly and
 the model had little to discriminate on.
 
+### Held-out generalization: 91.8%
+
+The eval above is a closed loop. `scripts/heldout_set.py` breaks it: 61
+transactions whose merchants appear **nowhere** in `VENDOR_KB_SEED`,
+labelled by hand rather than derived from the generator's tables.
+`tests/test_heldout_set.py` enforces the no-overlap property, so the set
+cannot silently rot into a lexical-match test as the KB grows. Score with
+`python -m scripts.run_heldout`.
+
+**56/61 = 91.8%**, against 100% on the synthetic set. That gap is the
+honest cost of generalization, and it is the number to quote.
+
+| difficulty | accuracy |
+|---|---|
+| easy (known brand, absent from KB) | 17/18 = 94.4% |
+| medium (obscured or abbreviated) | 28/29 = 96.6% |
+| hard (genuinely ambiguous) | 11/14 = 78.6% |
+
+**This is where the guardrail finally shows signal.** Split at the 0.80
+threshold: auto-applied rows are **93.2%** accurate (n=59), queued rows
+are **50%** (n=2). Errors concentrate in the bucket a human reviews,
+which is the entire point and which the synthetic set could not
+demonstrate -- there, both buckets were 100%.
+
+The clearest example is `DD/BR #340021 Q35` (Dunkin'/Baskin-Robbins),
+which returned **0.20** confidence with the reasoning "does not clearly
+match any known vendor... the retrieved context does not provide a strong
+similarity." It declined to guess rather than guessing confidently wrong.
+
+Of the five misses, three are arguably taxonomy rather than model error:
+
+- `KROGER #0455 FUEL CTR` -> `Transport` (labelled `Groceries`). A Kroger
+  fuel centre *is* a petrol station; the label is probably wrong.
+- `PARAMOUNT+` and `CLASSPASS.COM` -> `Subscriptions` (labelled
+  `Entertainment` / `Personal Care`). Both defensible, and both expose a
+  real boundary problem: this taxonomy puts Netflix, Hulu, and Spotify
+  under `Entertainment` but Adobe, NYT, and Dropbox under
+  `Subscriptions`, and a streaming service is legitimately both. That is
+  the fourth taxonomy gap this project has surfaced, after `Travel`,
+  `Personal Care`, and the gym.
+
+Which is the recurring lesson: on this system, most apparent model errors
+have turned out to be underspecified categories.
+
 ### Is the confidence score calibrated? Measured: no
 
 The apply guardrail rests entirely on a number the model reports about
